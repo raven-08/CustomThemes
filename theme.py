@@ -149,3 +149,24 @@ class Theme:
             border_color=["#8A9E72", "gray28"],
         )
         self.theme_frame.configure(fg_color=["#B0C9A0", "gray14"])
+
+    def metal(self):
+        self.theme_button.configure(
+            fg_color= ["#A0A0A0", "#505050"],
+            hover_color= ["#909090", "#606060"],
+            border_color= ["#3E454A", "#949A9F"],
+            text_color= ["#F0F0F0", "#F0F0F0"],
+            text_color_disabled= ["#C0C0C0", "#808080"]
+        )
+        self.dark_button.configure(
+            fg_color= ["#A0A0A0", "#505050"],
+            hover_color= ["#909090", "#606060"],
+            border_color= ["#3E454A", "#949A9F"],
+            text_color= ["#F0F0F0", "#F0F0F0"],
+            text_color_disabled= ["#C0C0C0", "#808080"]
+        )
+        self.frame.configure(
+            fg_color=["#C0C0C0", "#404040"],
+            border_color=["#808080", "#606060"],
+        )
+        self.theme_frame.configure(fg_color=["#E0E0E0", "#363636"])

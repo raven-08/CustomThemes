@@ -160,6 +160,18 @@ class SpectrumAnalyzerGUI(ctk.CTkFrame):
             command=self.setMarshTheme,
         )
         self.marsh.place(relx=0.4, rely=0.21, anchor="n")
+        self.metal = ctk.CTkButton(
+            self.theme_frame,
+            text="",
+            corner_radius=20,
+            height=40,
+            width=40,
+            fg_color=["#A0A0A0", "#505050"],
+            hover_color=["#909090", "#606060"],
+            border_color=["#3E454A", "#949A9F"],
+            command=self.setMetalTheme,
+        )
+        self.metal.place(relx=0.6, rely=0.21, anchor="n")
         self.theme = Theme(
             self.theme_button, self.dark_button, self.frame, self.theme_frame
         )
@@ -205,6 +217,9 @@ class SpectrumAnalyzerGUI(ctk.CTkFrame):
 
     def setMarshTheme(self):
         self.theme.marsh()
+
+    def setMetalTheme(self):
+        self.theme.metal()
 
 
 root = ctk.CTk()
